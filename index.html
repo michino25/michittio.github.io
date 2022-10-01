@@ -3,288 +3,151 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michat</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- phải đặt file responsive dưới file style vì độ ưu tiên CSS -->
-    <link rel="stylesheet" href="assets/css/responsive.css"> 
-    <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <title>Michitio | Trang chủ</title>
+    <link rel="shortcut icon" href="./assets/img/michitio-white.png" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <div id="main">
-        <div id="header">
-            <!-- Begin nav -->
-            <ul id="nav">
+    <div class="container">
+        <div class="header">
+            <!-- Begin navbar -->
+            <ul class="navbar">
                 <li>
-                    <a href="#">Home</a>
+                    <a class="header__logo no-hover" href="#">
+                        <img class="navbar__img" src="./assets/img/michitio-white.png" alt="">
+                        Michitio
+                    </a>
                 </li>
                 <li>
-                    <a href="#about">About team</a>
+                    <a href="./michat/">Michat</a>
                 </li>
                 <li>
-                    <a href="#hiring">We are hiring</a>
+                    <a href="#">Michi Assistant</a>
                 </li>
                 <li>
-                    <a href="#features">Features</a>
+                    <a href="./michio/">Michio</a>
                 </li>
+                <li>
+                    <a href="#">Miopay</a>
+                </li>
+                <li>
+                    <a href="#">MiKey</a>
+                </li>
+                <li>
+                    <a href="./misnake/">MiPlay</a>
+                </li>
+            </ul>
+
+            <ul class="navbar">
                 <li>
                     <a href="#">
-                        More
-                        <i class="nav-icon ti-angle-double-down"></i>
+                        <img class="navbar__img" src="./assets/img/avt.jpg" alt="">
+                        About Me
                     </a>
-                    <ul class="subnav">
-                        <li><a href="#">Desktop app</a></li>
-                        <li><a href="#">For developer</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Terms</a></li>
-                    </ul>
-
                 </li>
             </ul>
             <!-- End nav -->
 
-            <!-- Begin search -->
-            <div class="search-btn">
-                <i class="header-icon ti-search"></i>
-            </div>
-
-            <div class="mobile-menu-btn">
-                <i class="header-icon ti-menu"></i>
-            </div>
-            <!-- End search -->
-
         </div>
 
-        <div id="slider">
-            <div class="slider-content">
-                <img class="img-content" src="./assets/img/logo.png" alt="logo" width="30%">
-                <h2 class="header-content">Michat</h2>
-                <div class="text-content">Hang out anytime, anywhere</div>
+        <div class="header-replace"></div>
+
+        <div class="profile-card">
+            <div class="profile-card__img">
+                <img class="profile-card__avt" src="./assets/img/avt.jpg" alt="...">
             </div>
-        </div>
-        <div id="content">
-            <!-- ABOUT TEAM -->
-            <div id="about" class="section-content">
-                <h2 class="header-content text-center">About team</h2>
-                <p class="subheader-content text-center">Connected everyone</p>
-                <p class="text-content">You know that you have the right teamwork for the job when your team delivers better outcomes than any one person could on their own. Achieving a goal is often easier when tasks are done cooperatively rather than relying on each individual’s
-                    singular efforts. An entire team operates best when each team member works collaboratively but still brings their own perspective and experiences and uses their own set of skills.</p>
-                <div class="member-list row">
-                    <div class="s-col-1 mg-16-0 col col-3-1 text-center">
-                        <p class="member-name">Nguyễn Hà Đông</p>
-                        <img class="member-img" src="./assets/img/mem-img/mem-1.png" alt="Nguyễn Hà Đông">
-                    </div>
-                    <div class="s-col-1 mg-16-0 col col-3-1 text-center">
-                        <p class="member-name">Nguyễn Như Trung</p>
-                        <img class="member-img" src="./assets/img/mem-img/mem-2.png" alt="Nguyễn Như Trung">
-                    </div>
-                    <div class="s-col-1 mg-16-0 col col-3-1 text-center">
-                        <p class="member-name">Phạm Huy Hoàng</p>
-                        <img class="member-img" src="./assets/img/mem-img/mem-3.png" alt="Phạm Huy Hoàng">
-                    </div>
+
+            <div class="profile-card__desc">
+                <h1>Nguyễn Như Trung</h1>
+                <div>Front-end Developer</div>
+                <div class="profile-card__desc-location">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <circle cx="12" cy="11" r="3"></circle>
+                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z">
+                        </path>
+                    </svg>
+                    <span>Ho Chi Minh City, Vietnam</span>
                 </div>
             </div>
 
-            <!-- WE ARE HIRING -->
-            <div id="hiring" class="hiring-content ">
-                <div class="section-content">
-                    <h2 class="header-content white-text text-center">We are hiring</h2>
-                    <p class="subheader-content white-text text-center">Are You The One? Come And Join Us</p>
-
-                    <ul class="hiring-list">
-                        <li>Germany <span class="full-slot">Full Slot</span></li>
-                        <li>India <span class="full-slot">Full Slot</span></li>
-                        <li>Vietnam <span class="quantity">3</span></li>
-                    </ul>
-
-                    <div class="place-list row">
-                        <div class="col col-3-1 mg-8-0 s-col-1">
-                            <img class="img-place" src="assets/img/place-img/place-1.png" alt="Ho Chi Minh City">
-                            <div class="place-info">
-                                <h3 class="hiring-position">Java Developer</h3>
-                                <P class="place-text">Ho Chi Minh City</P>
-                                <p class="description">2+ years experience at server-side languages such as Java</p>
-                                <button class="btn js-apply-btn">Apply now</button>
-                            </div>
-                        </div>
-
-                        <div class="col col-3-1 mg-8-0 s-col-1">
-                            <img class="img-place" src="assets/img/place-img/place-2.png" alt="Da Nang City">
-                            <div class="place-info">
-                                <h3 class="hiring-position">Graphic Designer</h3>
-                                <p class="place-text">Da Nang City</p>
-                                <p class="description">Good use of Illustrator, Photoshop,... related basic applications</p>
-                                <button class="btn js-apply-btn">Apply now</button>
-                            </div>
-                        </div>
-
-                        <div class="col col-3-1 mg-8-0 s-col-1">
-                            <img class="img-place" src="assets/img/place-img/place-3.png" alt="Ha Noi City">
-                            <div class="place-info">
-                                <h3 class="hiring-position">Automation Tester</h3>
-                                <p class="place-text">Ha Noi City</p>
-                                <p class="description">Degree in Computer Science and 1+ years experience in test Web</p>
-                                <button class="btn js-apply-btn">Apply now</button>
-                            </div>
-                        </div>
-                    </div>
+            <div class="profile-card__info">
+                <div>
+                    <div>450+</div>
+                    <div>Followers</div>
+                </div>
+                <div>
+                    <div>35+</div>
+                    <div>References</div>
+                </div>
+                <div>
+                    <div>60</div>
+                    <div>Works</div>
                 </div>
             </div>
 
-            <!-- FEATURES -->
-            <div id="features">
-                <h2 class="header-content text-center">Features</h2>
-                <p class="subheader-content text-center">More ways to stay connected</p>
-                
-                <div class="section-feature-content">
-                
-                    <div class="row s-mg-64-0">
-                        <div class="col col-2 s-col-1">
-                            <img src="assets/img/features/feature-1.png" alt="chat" class="img-feature col-1">
-                        </div>
-
-                        <div class="col col-2 s-col-1">
-                            <div class="feature-content">
-                                <p class="function">Chat together</p>
-                                <p class="title">Express yourself</p>
-                                <p class="discription">Michat has everything you need to feel closer to your favourite people.</p>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="row s-mg-64-0">
-                        <div class="col col-2 s-col-1">
-                            <div class="feature-content">
-                                <p class="function">Custom reactions</p>
-                                <p class="title">Say it with any emoji</p>
-                                <p class="discription">Lost for words? Now you can customise your reactions with way more emojis to
-                                    choose from, including 🎉 and 🔥.</p>
-                            </div>
-                        </div>
-
-                        <div class="col col-2 s-col-1">
-                            <img src="assets/img/features/feature-2.png" alt="chat" class="img-feature col-1">
-                        </div>
-                    </div>
-                
-                    <div class="row s-mg-64-0">
-                        <div class="col col-2 s-col-1">
-                            <img src="assets/img/features/feature-3.png" alt="chat" class="img-feature col-1">
-                        </div>
-
-                        <div class="col col-2 s-col-1">
-                            <div class="feature-content">
-                                <p class="function">Replies and forwarding</p>
-                                <p class="title">Let the conversation flow</p>
-                                <p class="discription">Choose the exact message that you want to reply to or forward, directly in your
-                                    chat.</p>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="row s-mgt-64 mgt-32">
-
-                        <div class="col col-2 s-col-1">
-                            <div class="feedback-content feature-content">
-                                <p class="function">Feedback</p>
-                                <p class="title">Do you want to improve us?</p>
-                                <p class="discription">We always listen to your feedback and try to do what's best for your convenience.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col col-2 s-col-1" style="margin: 0 auto;">
-                            <div class="send-feedback-label text-center">Feedback box</div>
-                            <form action="" class="feedback-form">
-                                <div class="row mg-16-0">
-                                    <div class="col col-2 s-col-1">
-                                        <input type="text" placeholder="Name" required id="" class="form-control">
-                                    </div>
-                                    <div class="col col-2 s-col-1 s-mgt-16">
-                                        <input type="email" placeholder="Email" required id="" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="row mg-16-0">
-                                    <div class="col col-1">
-                                        <input type="text" placeholder="Message" required id="" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <input class="btn text-center" type="submit" value="Send feedback"></input>
-                                </div>
-                            </form>
-
-                            <div class="send-feedback-label text-center">Or contact us via</div>
-                            <div class="contact-info">
-                                <p class="contact-item">
-                                    <i class="contact-icon ti-location-pin"></i>
-                                    <span class="contact-bold">Address:</span> Hanoi, Vietnam
-                                </p>
-                                <p class="contact-item">
-                                    <i class="contact-icon ti-mobile"></i>
-                                    <span class="contact-bold">Phone:</span> 
-                                    <a href="tel:+84909055555">(+84) 9090 55555</a>
-                                </p>
-                                <p class="contact-item">
-                                    <i class="contact-icon ti-email"></i>
-                                    <span class="contact-bold">Email:</span> 
-                                    <a href="mailto:help@michat.com">help@michat.com</a>
-                                </p>
-                            </div>
-
-                        </div>
-                
-                    </div>
-                </div>
-
+            <div class="profile-card__social">
+                <a href="#" class="facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook"
+                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+                    </svg>
+                </a>
+                <a href="#" class="twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter"
+                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                            d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="#" class="instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram"
+                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
+                    </svg>
+                </a>
+                <a href="#" class="zalo">
+                    <img src="./assets/img/zalo-logo-black-over.svg" alt="" width="50%"
+                        style="filter: invert(100%) sepia(6%) saturate(1%) hue-rotate(95deg) brightness(106%) contrast(100%);"
+                        class="icon icon-tabler icon-tabler-brand-behance">
+                </a>
+                <a href="#" class="github">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                            d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5">
+                        </path>
+                    </svg>
+                </a>
             </div>
 
-        </div>
-
-        <div id="footer">
-            <p class="copyright">© Michat 2022</p>
-        </div>
-
-    </div>
-    
-    <div class="modal">
-        <div class="modal-container js-modal-container">
-            <div class="modal-close js-modal-close">
-                <i class="ti-close"></i>
+            <div class="profile-card__action">
+                <button class="blue">Send Mesage</button>
+                <button class="orange">Follow Me</button>
             </div>
-
-            <header class="modal-header">
-                <i class="header-icon ti-write"></i> Infomation
-            </header>
-
-            <div class="modal-body">
-                <label for="modal-name" class="modal-label">
-                    <i class="ti-id-badge"></i>
-                     Name
-                </label>
-                <input type="text" id="modal-name" class="modal-input" placeholder="Your name...">
-
-                <label for="modal-email" class="modal-label">
-                    <i class="ti-email"></i>
-                     Email
-                </label>
-                <input type="email" id="modal-email" class="modal-input" placeholder="Your email...">
-
-                <button id="sent-btn">
-                    Send 
-                    <i class="ti-upload"></i>
-                </button>
-            </div>
-
-            <footer class="modal-footer">
-                <p class="model-help">Need <a href="#">help</a>?</p>
-            </footer>
         </div>
     </div>
 
-    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michitio | Mi Snake Game</title>
+    <link rel="shortcut icon" href="../assets/img/michitio-white.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <!-- Begin navbar -->
+            <ul class="navbar">
+                <li>
+                    <a class="header__logo no-hover" href="#">
+                        <img class="navbar__img" src="../assets/img/michitio-white.png" alt="">
+                        Michitio
+                    </a>
+                </li>
+                <li>
+                    <a href="../michat/">Michat</a>
+                </li>
+                <li>
+                    <a href="#">Michi Assistant</a>
+                </li>
+                <li>
+                    <a href="../michio/">Michio</a>
+                </li>
+                <li>
+                    <a href="#">Miopay</a>
+                </li>
+                <li>
+                    <a href="#">MiKey</a>
+                </li>
+                <li>
+                    <a href="../misnake/">MiPlay</a>
+                </li>
+            </ul>
+
+            <ul class="navbar">
+                <li>
+                    <a href="#">
+                        <img class="navbar__img" src="../assets/img/avt.jpg" alt="">
+                        About Me
+                    </a>
+                </li>
+            </ul>
+            <!-- End nav -->
+
+        </div>
+
+        <div class="header-replace"></div>
+
+        <div class="game-card">
+
+            <div class="game-card__desc">
+                <h1>Mi Snake Game</h1>
+                <div>Score</div>
+            </div>
+
+            <canvas class="game-card__board"></canvas>
+            <script src="js/game.js"></script>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

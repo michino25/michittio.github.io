@@ -1,0 +1,635 @@
+/* common css */
+
+.text-center {
+    text-align: center !important;
+}
+
+.white-text {
+    color: white !important;
+}
+
+.text-h-center {
+    transform: translateY(50%);
+}
+
+.mg-8-0 {
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+}
+
+.mg-16-0 {
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
+}
+
+.mg-32-0 {
+    margin-top: 32px !important;
+    margin-bottom: 32px !important;
+}
+
+.mgt-32 {
+    margin-top: 32px !important;
+}
+
+.open {
+    display: flex !important;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.btn {
+    border: none;
+    font-family: 'Segoe UI';
+    margin: 0 8px;
+    width: calc(100% - 16px);
+    color: white;
+    background: black;
+    padding: 10px 0;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.clear {
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-1 {
+    width: 100%;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-3-1 {
+    width: 33.3333%;
+}
+
+.col-3-2 {
+    width: 66.6667%;
+}
+
+
+/* reset css */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/*
+1. Vị trí
+2. Kích thước
+3. Màu sắc
+4. Kiểu dáng (kiểu chữ, tròn vuông)
+*/
+
+
+/* main */
+
+
+#main {
+    overflow: hidden;
+}
+
+
+/* ------------------ Header ------------------ */
+
+#header {
+    background-image: linear-gradient(-45deg, #30d058 0%, #1795cf 10%, #000 80%);
+    height: 46px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav>li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+    list-style: none;
+}
+
+#nav>li>a {
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0 24px;
+    line-height: 46px;
+}
+
+#nav li a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav>li:hover>a,
+#nav .subnav>li:hover>a {
+    color: #000;
+    background-color: rgba(188, 253, 253, 0.666);
+}
+
+#nav .subnav {
+    display: none;
+    min-width: 150px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a {
+    color: #000;
+    display: block;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#nav .nav-icon {
+    font-size: 14px;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+    /* cursor: pointer; */
+}
+
+#header .mobile-menu-btn:hover {
+    background-color: #31313183;
+}
+
+#header .search-btn,
+#header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#header .header-icon {
+    font-size: 18px;
+    font-weight: bolder;
+    color: #fff;
+    line-height: 46px;
+    padding: 0px 20px;
+}
+
+
+/* ------------------ Slider ------------------ */
+
+#slider {
+    background-color: #fff;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: linear-gradient(90deg, #fff, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)), url('/michat/assets/img/slider.png') top center /cover no-repeat;
+    position: relative;
+}
+
+#slider .slider-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 65%;
+    text-align: center;
+    /*  */
+    /* Làm chữ gradient */
+    background: linear-gradient(-45deg, #4fe2ff 20%, #2ee788 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#slider .img-content {
+    size: 20px;
+}
+
+#slider .header-content {
+    font-size: 3.5vw;
+    font-weight: 700;
+}
+
+#slider .text-content {
+    font-size: 2.5vw;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+
+/* ------------------ Content ------------------ */
+
+#content {
+    background-color: #ffffff;
+    /* height: 1000px; */
+}
+
+#content .section-content {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 64px 16px;
+}
+
+.header-content {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.subheader-content {
+    font-weight: 400;
+    opacity: 0.7;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+.section-content .text-content {
+    text-align: justify;
+    line-height: 1.5rem;
+    margin: 20px 0;
+}
+
+
+/* member list */
+
+.member-list {
+    margin-top: 30px;
+    /* Xử lý tương tự clear: both xử lý lỗi float: left */
+    /* overflow: hidden;  */
+}
+
+.member-list .member-name {
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+.member-list .member-img {
+    width: 80%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+
+/* hiring */
+
+.hiring-content {
+    background-image: linear-gradient(-75deg, #30d058 0%, #1795cf 7%, #000 40%);
+}
+
+.hiring-content .hiring-list {
+    text-align: left;
+    margin-top: 46px;
+}
+
+.hiring-list li {
+    list-style: none;
+    background-color: white;
+    color: #000;
+    font-size: 16px;
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.hiring-list .full-slot {
+    background-color: #F44336;
+    padding: 3px 6px;
+    margin: 0 16px;
+    color: #ffffff;
+}
+
+.hiring-list .quantity {
+    background-color: #000;
+    color: #fff;
+    float: right;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: -1px;
+}
+
+
+/* hiring place */
+
+.hiring-content .place-list {
+    margin-top: 8px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.place-list .img-place {
+    width: 100%;
+    display: block;
+}
+
+.place-list .img-place:hover {
+    opacity: 70%;
+    /* cursor: pointer; */
+}
+
+.place-list .place-info {
+    /* height: 60%; */
+    padding: 16px;
+    background-color: #fff;
+}
+
+.place-info .hiring-position {
+    font-weight: 600;
+    margin: 0px 0 10px;
+}
+
+.place-info .place-text {
+    margin: 10px 0;
+    color: #757575;
+    font-style: italic;
+}
+
+.place-info .description {
+    margin: 20px 0;
+    /* height: 75px; */
+    line-height: 1.4;
+}
+
+
+/* feature */
+
+#features {
+    padding: 64px 1%;
+}
+#features .section-feature-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#features .feature-content {
+    margin: 0 auto;
+    width: 50%;
+    height: 40vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#features .function {
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    word-spacing: 1px;
+}
+
+#features .title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#features .discription {
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+}
+
+#features .img-feature {
+    object-fit: contain;
+    height: 40vw;
+}
+
+/* feedback */
+
+.feedback-form{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.form-control {
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+    #features .feedback-content {
+        margin-top: 15%;
+    height: auto;
+}
+
+.send-feedback-label {
+    margin-top: 28px;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.contact-info{
+    margin-top: 8px;
+    text-align: center;
+}
+
+.contact-info .contact-item{
+    line-height: 2;
+    display: block;
+
+}
+
+.contact-info .contact-icon{
+    font-weight: 800;
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.contact-info .contact-bold{
+    font-weight: 500;
+}
+
+.contact-info .contact-item a {
+    color: rgb(1, 0, 8);
+    opacity: 0.9;
+}
+
+.contact-info .contact-item a:hover {
+    color: rgb(1, 0, 8);
+    opacity: 1;
+}
+
+
+/* footer */
+
+#footer {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(-35deg, #30d058 0%, #1795cf 7%, #000 40%);
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/* 
+#footer a {
+    text-decoration: none;
+}
+
+#footer i[class*="ti-"] {
+    color: #ddd;
+} */
+
+#footer .copyright {
+    font-size: 0.9rem;
+    /* margin-top: 10px; */
+}
+
+
+/* modal */
+
+.modal {
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal-container {
+    background: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease 0.5s;
+}
+
+.modal-container .modal-header {
+    background: linear-gradient(-35deg, #30d058 0%, #1795cf 50%);
+    color: #fff;
+    text-transform: uppercase;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.modal-container .header-icon {
+    margin: 0 16px;
+}
+
+.modal-container .modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 12px;
+    color: #fff;
+}
+
+.modal-container .modal-close:hover {
+    background: rgba(255, 38, 38, 0.9);
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 16px;
+}
+
+.modal-body .modal-label {
+    display: block;
+    margin: 12px 0;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.modal-body .modal-input {
+    margin-bottom: 16px;
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.modal-body #sent-btn {
+    margin: 12px 0 0;
+    width: 100%;
+    border: none;
+    color: white;
+    background: linear-gradient(-35deg, #30d058 0%, #1795cf 50%);
+    padding: 16px 0;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.modal-body #sent-btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.modal-footer {
+    padding: 16px;
+    text-align: right;
+}
+
+.modal-footer a {
+    color: #1795cf;
+}
+
+@keyframes modalFadeIn {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
