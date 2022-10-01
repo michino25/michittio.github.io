@@ -1,0 +1,219 @@
+.profile-card {
+    box-shadow: 0 18px 200px -60px black;
+    border-radius: 50px;
+    width: 650px;
+    position: relative;
+    backdrop-filter: blur(15px);
+    border: 2px solid #ffffff10;
+    padding: 3rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.profile-card__img {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 10px 60px -10px rgba(13, 28, 39, 0.5);
+}
+
+/* .profile-card__avt { width: 100%; } */
+
+.profile-card__desc {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.profile-card__desc h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.profile-card__desc h1 div {
+    font-size: 20px;
+}
+
+.profile-card__info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.profile-card__info div {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+
+}
+
+.profile-card__info div div:first-child {
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.profile-card__info div div:last-child {
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.profile-card__desc-location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.profile-card__social {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+}
+
+.profile-card__social a {
+    display: inline-flex;
+    width: 55px;
+    height: 55px;
+    margin: 15px;
+    border-radius: 40%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    flex-shrink: 0;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.profile-card__social a:hover {
+    transform: scale(1.2) translateY(-5px);
+}
+
+.profile-card__social .facebook {
+    background: linear-gradient(45deg, #3b5998, #0078d7);
+    box-shadow: 0 4px 30px rgba(43, 98, 169, 0.5);
+}
+
+.profile-card__social .twitter {
+    background: linear-gradient(45deg, #1da1f2, #0e71c8);
+    box-shadow: 0 4px 30px rgba(19, 127, 212, 0.7);
+}
+
+.profile-card__social .instagram {
+    background: linear-gradient(45deg, #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d);
+    box-shadow: 0 4px 30px rgba(120, 64, 190, 0.6);
+}
+
+.profile-card__social .zalo {
+    background: linear-gradient(45deg, #1769ff, #213fca);
+    box-shadow: 0 4px 30px rgba(27, 86, 231, 0.7);
+}
+
+.profile-card__social .github {
+    background: linear-gradient(45deg, #333333, #626b73);
+    box-shadow: 0 4px 30px rgba(63, 65, 67, 0.6);
+}
+
+.profile-card__action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.profile-card__action > button {
+    font-weight: bold;
+    font-size: 22px;
+    padding: 15px 0;
+    min-width: 250px;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.profile-card__action .blue {
+    background: linear-gradient(45deg, #1da1f2, #0e71c8);
+    
+    box-shadow: 0 4px 30px rgba(19, 127, 212, 0.4);
+}
+
+.profile-card__action .blue:hover {
+    box-shadow: 0 4px 30px rgba(19, 127, 212, 0.75);
+}
+
+.profile-card__action .orange {
+    background: linear-gradient(45deg, #d5135a, #f05924);
+    
+    box-shadow: 0 4px 30px rgba(223, 45, 70, 0.35);
+}
+
+.profile-card__action .orange:hover {
+    box-shadow: 0 7px 30px rgba(223, 45, 70, 0.75);
+}
+
+/* meida query */
+
+@media screen and (min-width: 576px) {
+    .profile-card__action>button:hover {
+        transform: translateY(-5px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .profile-card__info {
+        gap: 30px;
+    }
+
+    .profile-card__social a {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
+
+    .profile-card__social a:hover {
+        transform: scale(1.2) translateY(-5px);
+    }
+
+    .profile-card__action > button {
+        min-width: 170px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .profile-card {
+        width: auto;
+    }
+
+    .profile-card__action {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .profile-card__action > button {
+        min-width: inherit;
+        width: 100%;
+        min-width: 350px;
+    }
+
+}
