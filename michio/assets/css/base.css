@@ -356,7 +356,7 @@ html {
     margin: 0 12px;
     border-radius: 3px;
     overflow: hidden;
-    transition: ease 0.1s;
+    transition: ease-in 0.3s;
 }
 
 .pagination-item--disable {
@@ -390,7 +390,7 @@ html {
     font-size: 1.6rem;
     color: #888888;
     min-width: 40px;
-    height: 32px;
+    height: 36px;
 }
 
 .pagination-item__icon {

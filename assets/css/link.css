@@ -1,0 +1,6 @@
+/* link các thứ */
+
+:root {
+    --michat: "./michat/";
+    --text-color: #333;
+}
